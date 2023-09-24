@@ -12,7 +12,7 @@ def Generator():
     return ''.join(choice(letters) for i in range(randint(15, 25)))
 
 def solveRecaptcha(sitekey, url):
-    api_key = os.getenv('APIKEY_2CAPTCHA', '9e646e89775a494f20423509239c9850')
+    api_key = os.getenv('APIKEY_2CAPTCHA', 'YOUR_KEY')
 
     solver = TwoCaptcha(api_key)
 
